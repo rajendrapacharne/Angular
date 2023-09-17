@@ -11,4 +11,8 @@ export class AppComponent {
   getName(name:any){
     alert(name);
   }
+  getData(val:string){
+    console.warn(val);
+  }
 }
+

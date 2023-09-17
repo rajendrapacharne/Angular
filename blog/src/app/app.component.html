@@ -4,4 +4,11 @@
 <app-student-list></app-student-list>
 <app-country-list></app-country-list>
 <app-login></app-login>
-<button (click)="getName('Rajendra')">Click Me</button>
+<button (click)="getName('Rajendra')">Click Me</button> <br><br>
+<button (click)="getData('hello')">Click This </button><br><br>
+<input placeholder="Key-Up Event" #box type="text" (keyup)="getData(box.value)"/><br><br>
+<input placeholder="Key-Down Event" #box1 type="text" (keydown)="getData(box1.value)"/><br><br>
+<input placeholder="Key-bur Event" #box2 type="text" (blur)="getData(box2.value)"/><br><br>
+<input placeholder="Key-input Event" #box3 type="text" (input)="getData(box3.value)"/><br><br>
+<h1 (mouseover)="getData('Over')">Rajendra Pacharne</h1>
+<h1 (mouseleave)="getData('leave')">This Is Creator</h1><br><br>
