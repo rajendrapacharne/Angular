@@ -11,4 +11,7 @@
 <input placeholder="Key-bur Event" #box2 type="text" (blur)="getData(box2.value)"/><br><br>
 <input placeholder="Key-input Event" #box3 type="text" (input)="getData(box3.value)"/><br><br>
 <h1 (mouseover)="getData('Over')">Rajendra Pacharne</h1>
-<h1 (mouseleave)="getData('leave')">This Is Creator</h1><br><br>
+<h1 (mouseleave)="getData('leave')">This Is Creator</h1>
+<input type="text" #name  placeholder="Enter Name" name="name"/>
+<button (click)="getValue(name.value)">Submit</button>
+<p> This is Box  : {{displayVal}} </p>><br><br>
