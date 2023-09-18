@@ -21,5 +21,10 @@ export class AppComponent {
     console.warn(val);
     this.displayVal=val;
   }
+  count=0;
+  counter(type:string)
+  {
+    type=='add'? this.count++: this.count--;
+  }
 }
 
