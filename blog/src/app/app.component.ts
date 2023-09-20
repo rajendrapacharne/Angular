@@ -38,5 +38,12 @@ export class AppComponent {
     {Name :'jerry', Email : 'jerry@email.com',phone :9876 ,UserAccounts:['Twitter','bard','ChatGpt']},
 
   ];
+  bgcolor="pink";
+  color2="green";
+  updatedcolor()
+  {
+    this.color2='red';
+    this.bgcolor='aqua';
+  }
 }
 
