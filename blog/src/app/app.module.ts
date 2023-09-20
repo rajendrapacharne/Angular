@@ -7,7 +7,7 @@ import { UserListComponent } from './user-list/user-list.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { CountryListComponent } from './country-list/country-list.component';
 import { HeaderComponent } from './header/header.component';
-
+import {FormsModule} from '@angular/forms'
 
 
 @NgModule({
@@ -21,7 +21,8 @@ import { HeaderComponent } from './header/header.component';
   ],
   imports: [
     BrowserModule,
-    AuthUserModule
+    AuthUserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
