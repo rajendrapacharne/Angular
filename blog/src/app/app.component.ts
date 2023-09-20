@@ -29,5 +29,14 @@ export class AppComponent {
 
   show=true;
   color='xyz';
+  users=['Rajendra','Raj','Bheem','Tom','jerry'];
+  userDetails=[
+    {Name :'Rajendra', Email : 'Rajendra@email.com',phone :9876 },
+    {Name :'Raj', Email : 'Raj@email.com',phone :9876 },
+    {Name :'Bheem', Email : 'Bheem@email.com',phone :9876 },
+    {Name :'Tom', Email : 'Tom@email.com',phone :9876 },
+    {Name :'jerry', Email : 'jerry@email.com',phone :9876 },
+
+  ];
 }
 
