@@ -51,3 +51,10 @@
         Blue Color
     </h1>
 </ng-template>
+
+<div [ngSwitch]="color">
+    <h1 *ngSwitchCase="'red'" style="color: red;">Red Color By Switch Case</h1>
+    <h1 *ngSwitchCase="'blue'" style="color: blue;">Blue Color By Switch Case</h1>
+    <h1 *ngSwitchCase="'green'" style="color: green;">Green Color By Switch Case</h1>
+    <h1 *ngSwitchDefault> This is Not a Color</h1>
+</div>

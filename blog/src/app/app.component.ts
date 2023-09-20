@@ -28,6 +28,6 @@ export class AppComponent {
   }
 
   show=true;
-  color='blue';
+  color='xyz';
 }
 
