@@ -6,6 +6,7 @@ import { UserListComponent } from './user-list/user-list.component';
 
 import { StudentListComponent } from './student-list/student-list.component';
 import { CountryListComponent } from './country-list/country-list.component';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -15,6 +16,7 @@ import { CountryListComponent } from './country-list/country-list.component';
     UserListComponent,
     StudentListComponent,
     CountryListComponent,
+    HeaderComponent,
    
   ],
   imports: [
