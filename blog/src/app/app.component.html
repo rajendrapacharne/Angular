@@ -21,3 +21,17 @@
 <style>button{
     color:magenta
 }</style>
+
+<h1 *ngIf="show; then ifBlock else elseBlock"></h1>
+<ng-template #ifBlock>
+    <h1>
+    Rajendra Rajendra Rajendra
+</h1>
+</ng-template>
+
+
+<ng-template #elseBlock>
+    <h1>
+        Else Block
+    </h1>
+</ng-template>

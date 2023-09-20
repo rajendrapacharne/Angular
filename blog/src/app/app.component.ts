@@ -26,5 +26,7 @@ export class AppComponent {
   {
     type=='add'? this.count++: this.count--;
   }
+
+  show=true;
 }
 
