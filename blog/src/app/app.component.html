@@ -74,4 +74,9 @@
 <button (click)="updatedcolor()">Update Color</button> -->
 <!-- <app-header></app-header> -->
 
-<app-login></app-login>
+
+<button (click)="toggle()">Toggle</button>
+<div  *ngIf="display">
+    <app-login></app-login>
+    <h1>Heading</h1>
+</div>

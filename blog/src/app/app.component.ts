@@ -1,3 +1,4 @@
+import { FactoryTarget } from '@angular/compiler';
 import { Component } from '@angular/core';
 
 @Component({
@@ -45,5 +46,11 @@ export class AppComponent {
     this.color2='red';
     this.bgcolor='aqua';
   }
+  display=true;
+  toggle()
+  {
+      this.display=false;
+  }
+
 }
 
