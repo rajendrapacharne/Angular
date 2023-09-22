@@ -1,19 +1,29 @@
-<p>
+<!-- <p>
 	<ngb-alert> This alert's type is success and it's not dismissible because the config has been customized </ngb-alert>
-</p>
+</p> -->
 
 <!-- 1. inline datepicker -->
-<ngb-datepicker #d></ngb-datepicker>
+<!-- <ngb-datepicker #d></ngb-datepicker> -->
 
 <!-- 2. datepicker in the popup -->
-<input type="text" ngbDatepicker #d="ngbDatepicker"/>
-<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+<!-- <input type="text" ngbDatepicker #d="ngbDatepicker"/>
+<mat-slide-toggle>Toggle me!</mat-slide-toggle> -->
 
-<div class="example-button-row">
+<!-- <div class="example-button-row">
     <button mat-raised-button>Basic</button>
     <button mat-raised-button color="primary">Primary</button>
     <button mat-raised-button color="accent">Accent</button>
     <button mat-raised-button color="warn">Warn</button>
     <button mat-raised-button disabled>Disabled</button>
     <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
-  </div>
+  </div> -->
+  <h1> To Do List</h1><br>
+  <input #task type="text" placeholder="Enter task"><br><br>
+  <button (click)="addtask(task.value)" type="submit">Add Task</button><br>
+
+  <ul *ngFor="let item of list">
+	<li>
+		{{item.name }}
+		<button (click)="removeTask(item.id)">Remove</button>
+	</li>
+  </ul>
