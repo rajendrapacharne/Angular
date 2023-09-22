@@ -18,4 +18,10 @@ export class AppComponent {
     console.warn(id);
     this.list=this.list.filter(item=>item.id!==id);
   }
+  data=10;
+
+  updateChild()
+  {
+    this.data=Math.floor(Math.random()*10);
+  }
 }
