@@ -7,12 +7,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatButtonModule} from '@angular/material/button';
-import { ChildComponent } from './child/child.component'
+import { ChildComponent } from './child/child.component';
+import { UserdetailsComponent } from './userdetails/userdetails.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChildComponent
+    ChildComponent,
+    UserdetailsComponent
   ],
   imports: [
     BrowserModule,

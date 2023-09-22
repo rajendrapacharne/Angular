@@ -28,6 +28,12 @@
 	</li>
   </ul> -->
 
-  <app-child [item]="data"></app-child>
+  <!-- <app-child [item]="data"></app-child>
 
-  <button (click)="updateChild()" type="submit">Update child component</button>
+  <button (click)="updateChild()" type="submit">Update child component</button> -->
+
+
+  <ul *ngFor="let user of userDetails">
+    <app-userdetails [item]="user"></app-userdetails>
+  </ul>
+ 

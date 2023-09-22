@@ -1,0 +1,11 @@
+li{
+    display: inline-block;
+    padding: 10px;
+    background-color: skyblue;
+    width: 30%;
+    margin-right: 10px;
+    color: white;
+    margin-top: 10px;
+    border-left: 1px solid orangered;
+
+}
