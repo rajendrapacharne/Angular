@@ -13,6 +13,10 @@ export class AppComponent {
   {
     return item.toUpperCase();
   }
+  user={
+    name:"Rajendra",
+    age:23
+  }
 
   list:any[]=[];
   addtask(item:string)
