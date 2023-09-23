@@ -38,6 +38,9 @@
   </ul> -->
  
   <!-- <app-child (UpdateDataEvent)="UpdateData($event)"></app-child> -->
-
+<!-- 
   <input type="text" placeholder="Name" [(ngModel)]="name"/>
-  <h1>{{name}}</h1>
+  <h1>{{name}}</h1> -->
+
+  <input type="text" placeholder="Text" #box1/>
+  <button (click)="getval(box1)"> Submit</button>

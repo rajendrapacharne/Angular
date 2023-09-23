@@ -40,4 +40,8 @@ export class AppComponent {
   }
 
   name:any;
+
+  getval(item:HTMLInputElement){
+    console.warn(item);
+  }
 }
