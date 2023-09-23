@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog2';
+  today=Date();
+
+  capString(item:string)
+  {
+    return item.toUpperCase();
+  }
+
   list:any[]=[];
   addtask(item:string)
   {
