@@ -38,4 +38,6 @@ export class AppComponent {
   {
     console.warn(item);
   }
+
+  name:any;
 }

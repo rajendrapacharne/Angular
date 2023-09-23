@@ -9,6 +9,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatButtonModule} from '@angular/material/button';
 import { ChildComponent } from './child/child.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component'
+import {FormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { UserdetailsComponent } from './userdetails/userdetails.component'
     BrowserAnimationsModule,
     MatSlideToggleModule,
     MatButtonModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -37,4 +37,7 @@
     <app-userdetails [item]="user"></app-userdetails>
   </ul> -->
  
-  <app-child (UpdateDataEvent)="UpdateData($event)"></app-child>
+  <!-- <app-child (UpdateDataEvent)="UpdateData($event)"></app-child> -->
+
+  <input type="text" placeholder="Name" [(ngModel)]="name"/>
+  <h1>{{name}}</h1>
