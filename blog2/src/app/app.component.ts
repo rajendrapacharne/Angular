@@ -34,4 +34,8 @@ export class AppComponent {
 
   ];
 
+  UpdateData(item:string)
+  {
+    console.warn(item);
+  }
 }

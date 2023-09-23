@@ -32,8 +32,9 @@
 
   <button (click)="updateChild()" type="submit">Update child component</button> -->
 
-
+<!-- 
   <ul *ngFor="let user of userDetails">
     <app-userdetails [item]="user"></app-userdetails>
-  </ul>
+  </ul> -->
  
+  <app-child (UpdateDataEvent)="UpdateData($event)"></app-child>
