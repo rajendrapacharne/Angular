@@ -62,7 +62,7 @@ export class AppComponent {
   // }
 
   loginForm=new FormGroup({
-    user:new FormControl('',[Validators.required,Validators.email]),
+    user:new FormControl('',[Validators.required,Validators.email]),//Validators.pattern[give your regex]
     password:new FormControl('',[Validators.required,Validators.minLength(5)])
   
   })
