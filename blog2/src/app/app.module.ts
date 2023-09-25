@@ -9,13 +9,15 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatButtonModule} from '@angular/material/button';
 import { ChildComponent } from './child/child.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component'
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { UsdTinrPipe } from './pipes/usd-tinr.pipe'
 
 @NgModule({
   declarations: [
     AppComponent,
     ChildComponent,
-    UserdetailsComponent
+    UserdetailsComponent,
+    UsdTinrPipe
   ],
   imports: [
     BrowserModule,
