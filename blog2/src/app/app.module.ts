@@ -9,8 +9,9 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatButtonModule} from '@angular/material/button';
 import { ChildComponent } from './child/child.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component'
-import {FormsModule} from '@angular/forms';
-import { UsdTinrPipe } from './pipes/usd-tinr.pipe'
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { UsdTinrPipe } from './pipes/usd-tinr.pipe';
+
 
 @NgModule({
   declarations: [
@@ -27,6 +28,8 @@ import { UsdTinrPipe } from './pipes/usd-tinr.pipe'
     MatSlideToggleModule,
     MatButtonModule,
     FormsModule,
+    ReactiveFormsModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

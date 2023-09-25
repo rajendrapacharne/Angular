@@ -57,8 +57,15 @@
 
   <!-- <h1>{{20 |usdTinr :80}}</h1> -->
 
-  <form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)">
+  <!-- <form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)">
 <input type="text" placeholder="Enter Name" name="name" required ngModel/><br><br/>
 <input type="password" placeholder="Enter password" name="password" required ngModel/><br><br/>
 <button type="submit">Submit</button>
+  </form> -->
+
+  <form [formGroup]="loginForm" (ngSubmit)="LoginUser()">
+    <input type="text" placeholder="Enter Name" name="user" formControlName="user"/><br><br/>
+    <input type="password" placeholder="Enter password" name="password" formControlName="password"/><br><br/>
+    <button type="submit">Submit</button>
   </form>
+  
