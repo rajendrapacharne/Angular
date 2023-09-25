@@ -55,4 +55,10 @@
   <h1>{{title  | slice :2}}</h1>
   <h1>{{user | json |uppercase}}</h1> -->
 
-  <h1>{{20 |usdTinr :80}}</h1>
+  <!-- <h1>{{20 |usdTinr :80}}</h1> -->
+
+  <form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)">
+<input type="text" placeholder="Enter Name" name="name" required ngModel/><br><br/>
+<input type="password" placeholder="Enter password" name="password" required ngModel/><br><br/>
+<button type="submit">Submit</button>
+  </form>

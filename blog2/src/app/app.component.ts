@@ -55,4 +55,8 @@ export class AppComponent {
   getval(item:HTMLInputElement){
     console.warn(item);
   }
+  userLogin(item:any)
+  {
+    console.warn(item);
+  }
 }
