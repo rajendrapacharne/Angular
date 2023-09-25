@@ -63,7 +63,7 @@
 <button type="submit">Submit</button>
   </form> -->
 
-  <form [formGroup]="loginForm" (ngSubmit)="LoginUser()">
+  <!-- <form [formGroup]="loginForm" (ngSubmit)="LoginUser()">
     <input type="text" placeholder="Enter Name" name="user" formControlName="user"/><br>
     <span style="color: red;" *ngIf="user && user.invalid && user.touched" >You must enter UserName</span>
       <br/>
@@ -71,6 +71,8 @@
     <span style="color: red;" *ngIf="password && password.invalid && password.touched" >You must enter password</span>
     <br/>
     <button type="submit" [disabled]="loginForm.invalid">Submit</button>
-  </form>
+  </form> -->
   
+
+  <h1 appRedEl>Hello Angular</h1>
 

@@ -11,6 +11,7 @@ import { ChildComponent } from './child/child.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component'
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { UsdTinrPipe } from './pipes/usd-tinr.pipe';
+import { RedElDirective } from './red-el.directive';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { UsdTinrPipe } from './pipes/usd-tinr.pipe';
     AppComponent,
     ChildComponent,
     UserdetailsComponent,
-    UsdTinrPipe
+    UsdTinrPipe,
+    RedElDirective
   ],
   imports: [
     BrowserModule,
