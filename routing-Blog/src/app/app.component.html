@@ -1,5 +1,5 @@
 <h1>Rajendra The Developer</h1>
-<a routerLink="about">about</a> <br/><br/>
+<!-- <a routerLink="about">about</a> <br/><br/>
 <a routerLink="">home</a> <br/><br/>
 <a routerLink="user">user</a><br/><br/>
 
@@ -8,4 +8,11 @@
 <a routerLink="user/20">yash</a><br/><br/>
 <a routerLink="user/30">Dora</a><br/><br/>
 
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
+
+<ul>
+    <li *ngFor="let data of memberData">
+            {{data.Name}}
+    </li>
+</ul>
+<app-footer></app-footer>
