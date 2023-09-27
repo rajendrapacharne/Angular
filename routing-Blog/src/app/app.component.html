@@ -10,9 +10,18 @@
 
 <router-outlet></router-outlet> -->
 
-<ul>
+<!-- <ul>
     <li *ngFor="let data of memberData">
             {{data.Name}}
     </li>
+</ul> -->
+
+<ul>
+    <li *ngFor="let data of users">
+            {{data.name}} :  {{data.age}} 
+    </li>
 </ul>
-<app-footer></app-footer>
+
+<app-footer>
+  
+</app-footer>
