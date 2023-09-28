@@ -26,11 +26,19 @@
   
 </app-footer> -->
 
-<ul>
+<!-- <ul>
     <li *ngFor="let data of users.results">
       {{ data.email }}
     </li>
   </ul>
   <app-footer>
   
-  </app-footer>
+  </app-footer> -->
+
+  <h1> User Form</h1>
+  <form #usersform="ngForm" (ngSubmit)="getUserFormData(usersform.value)">
+    <input ngModel placeholder="Name" type="text" name="user"/> <br/><br/>
+    <input ngModel placeholder="Email" type="text" name="email"/> <br/><br/>
+    <input ngModel placeholder="Password" type="password" name="Password"/> <br/><br/>
+    <button>Submit</button>
+  </form>

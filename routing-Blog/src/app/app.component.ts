@@ -33,5 +33,14 @@ export class AppComponent {
     
     
   }
+  getUserFormData(data:any)
+  {
+      // console.warn('Data',data);
+      this.userData.saveUsers(data).subscribe((result)=>
+      {
+      console.warn(result);
+      }
+      )
+  }
 
 }
