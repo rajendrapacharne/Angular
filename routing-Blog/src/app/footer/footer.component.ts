@@ -14,10 +14,23 @@ export class FooterComponent {
     {Name :'jerry', Email : 'jerry@email.com',phone :9876 ,UserAccounts:['Twitter','bard','ChatGpt']},
 
   ];
+  // users:any;
+  // constructor(private userData:UserDataService)
+  // {
+  //   console.warn('usedata',userData.users());
+  //   this.users=userData.users();
+  // }
+
+  
   users:any;
   constructor(private userData:UserDataService)
   {
-    console.warn('usedata',userData.users());
-    this.users=userData.users();
+    userData.users().subscribe((data)=>{
+    console.warn('data',data);
+    this.users=data });
+     
+    
+    
   }
+
 }
