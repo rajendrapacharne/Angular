@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import {FormControl} from '@angular/forms';
 import { FormBuilder, FormGroup, Validators ,ReactiveFormsModule} from '@angular/forms';
+import {datType} from './users'
+
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -78,4 +82,18 @@ export class AppComponent {
   {
     return this.loginForm.get('password');
   }
+
+  getdata()
+  {
+    const data:datType={
+      name:'Rajendra',
+      id:100,
+      Indian:true,
+      address:'pune'
+    }
+    return data;
+  }
+
+
+
 }
