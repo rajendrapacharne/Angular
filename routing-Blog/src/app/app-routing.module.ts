@@ -10,19 +10,19 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import {LoginComponent} from './users/login/login.component';
 import {SignupComponent} from './users/signup/signup.component';
 const routes: Routes = [
-  {
-    path:'login',component:LoginComponent
-    // path:'about',
+  // {
+  //   path:'login',component:LoginComponent
+  //   // path:'about',
     
-    // component:AboutComponent,
-    // children:[
-    //   {path:'company',component:AboutCompanyComponent},
-    //   {path:'me',component:AboutMeComponent}
-    // ]
-  },
-  {
-    path:'signup',component:SignupComponent
-  }
+  //   // component:AboutComponent,
+  //   // children:[
+  //   //   {path:'company',component:AboutCompanyComponent},
+  //   //   {path:'me',component:AboutMeComponent}
+  //   // ]
+  // },
+  // {
+  //   path:'signup',component:SignupComponent
+  // }
   // {
   //   path:'',
   //   component:HomeComponent

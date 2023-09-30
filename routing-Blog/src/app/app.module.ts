@@ -10,9 +10,11 @@ import { NoPageComponent } from './no-page/no-page.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { FooterComponent } from './footer/footer.component';
-import {HttpClientModule} from '@angular/common/http'
-import {FormsModule} from '@angular/forms'
-import {UsersModule} from '../app/users/users.module'
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
+import {UsersModule} from '../app/users/users.module';
+import{AdminModule} from './admin/admin.module'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +31,8 @@ import {UsersModule} from '../app/users/users.module'
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    UsersModule
+    UsersModule,
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]
