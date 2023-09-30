@@ -13,7 +13,10 @@ import { FooterComponent } from './footer/footer.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import {UsersModule} from '../app/users/users.module';
-import{AdminModule} from './admin/admin.module'
+import{AdminModule} from './admin/admin.module';
+import { ListComponent } from './userModule/list/list.component';
+import { LoginComponent } from './userModule/login/login.component';
+import{UserModuleModule} from '../app/user-module/user-module.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import{AdminModule} from './admin/admin.module'
     NoPageComponent,
     AboutCompanyComponent,
     AboutMeComponent,
-    FooterComponent
+    FooterComponent,
+    ListComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +37,8 @@ import{AdminModule} from './admin/admin.module'
     HttpClientModule,
     FormsModule,
     UsersModule,
-    AdminModule
+    AdminModule,
+    UserModuleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

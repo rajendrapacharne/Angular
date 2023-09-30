@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {LoginComponent} from './login/login.component';
-import {ListComponent} from './list/list.component';
+import {ListComponent} from '../userModule/list/list.component';
+import {LoginComponent} from '../userModule/login/login.component';
 const routes: Routes = [
- 
   {
-    path:'admin',children:[
+    path:'user',children:[
       {path:'login',component:LoginComponent},
       {path:'list',component:ListComponent}
     ]
@@ -16,4 +15,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AdminRoutingModule { }
+export class UserModuleRoutingModule { }
