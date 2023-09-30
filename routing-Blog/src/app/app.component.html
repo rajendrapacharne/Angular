@@ -34,11 +34,22 @@
   <app-footer>
   
   </app-footer> -->
-
+<!-- 
   <h1> User Form</h1>
   <form #usersform="ngForm" (ngSubmit)="getUserFormData(usersform.value)">
     <input ngModel placeholder="Name" type="text" name="user"/> <br/><br/>
     <input ngModel placeholder="Email" type="text" name="email"/> <br/><br/>
     <input ngModel placeholder="Password" type="password" name="Password"/> <br/><br/>
     <button>Submit</button>
-  </form>
+  </form> -->
+<!-- 
+  <app-login></app-login>
+  <app-signup></app-signup> -->
+
+  <ul>
+    <li>
+      <a routerLink="login">Login</a> <br/><br/>
+      <a routerLink="signup">SignUp</a> <br/><br/>
+    </li>
+  </ul>
+  <router-outlet></router-outlet>

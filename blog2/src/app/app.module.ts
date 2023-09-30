@@ -13,6 +13,7 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { UsdTinrPipe } from './pipes/usd-tinr.pipe';
 import { RedElDirective } from './red-el.directive';
 
+import {UsersModule} from '../app/users/users.module'
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { RedElDirective } from './red-el.directive';
     MatButtonModule,
     FormsModule,
     ReactiveFormsModule,
+    UsersModule,
    
   ],
   providers: [],

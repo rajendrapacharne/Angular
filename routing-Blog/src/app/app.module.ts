@@ -12,6 +12,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { FooterComponent } from './footer/footer.component';
 import {HttpClientModule} from '@angular/common/http'
 import {FormsModule} from '@angular/forms'
+import {UsersModule} from '../app/users/users.module'
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import {FormsModule} from '@angular/forms'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    UsersModule
   ],
   providers: [],
   bootstrap: [AppComponent]

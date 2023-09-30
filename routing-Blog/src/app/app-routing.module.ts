@@ -7,27 +7,34 @@ import { NoPageComponent } from './no-page/no-page.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 
+import {LoginComponent} from './users/login/login.component';
+import {SignupComponent} from './users/signup/signup.component';
 const routes: Routes = [
   {
-    path:'about',
-    component:AboutComponent,
-    children:[
-      {path:'company',component:AboutCompanyComponent},
-      {path:'me',component:AboutMeComponent}
-    ]
+    path:'login',component:LoginComponent
+    // path:'about',
+    
+    // component:AboutComponent,
+    // children:[
+    //   {path:'company',component:AboutCompanyComponent},
+    //   {path:'me',component:AboutMeComponent}
+    // ]
   },
   {
-    path:'',
-    component:HomeComponent
-  },
-  {
-    path:'user/:id',
-    component:UserComponent
-  },
-  {
-    component:NoPageComponent,
-    path:'**'
+    path:'signup',component:SignupComponent
   }
+  // {
+  //   path:'',
+  //   component:HomeComponent
+  // },
+  // {
+  //   path:'user/:id',
+  //   component:UserComponent
+  // },
+  // {
+  //   component:NoPageComponent,
+  //   path:'**'
+  // }
 ];
 
 @NgModule({
