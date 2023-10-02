@@ -47,6 +47,7 @@ Make Changes: Make your code changes and improvements.
 
 Submit a Pull Request: When you're ready, submit a pull request to our main repository.
 
+
 ## License
 Our Angular project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Please review the license file for more details on how you can use and distribute the project.
 
